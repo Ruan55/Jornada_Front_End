@@ -50,9 +50,50 @@ O objetivo é documentar os tópicos estudados, compartilhar códigos de exemplo
 
 ---
 
-## 🎯 Objetivo
-Documentar e praticar cada conteúdo estudado no curso, aplicando em projetos próprios para consolidar o aprendizado.
+## 📅 Dia 2 - HTML
+
+1. **Comentários**  
+   - Uso de `<!-- comentário -->` para inserir anotações no código sem afetar a renderização.
+
+2. **Links**  
+   - Link padrão: `<a href="https://exemplo.com">Texto do link</a>`
+   - Abrir em nova aba: `<a href="https://exemplo.com" target="_blank" rel="noopener noreferrer">Abrir em nova aba</a>`
+   - Link interno para outra página: `<a href="pagina.html">Ir para página</a>`
+
+3. **Imagens**  
+   - Imagem simples: `<img src="imagem.jpg" alt="Descrição da imagem">`
+   - Definindo tamanho: `<img src="imagem.jpg" alt="Descrição" width="300">`
+
+4. **Tabelas**  
+   - Estrutura básica:
+     ```html
+     <table>
+       <tr>
+         <th>Coluna 1</th>
+         <th>Coluna 2</th>
+       </tr>
+       <tr>
+         <td>Dado 1</td>
+         <td>Dado 2</td>
+       </tr>
+     </table>
+     ```
+
+5. **Listas**  
+   - Lista não ordenada:
+     ```html
+     <ul>
+       <li>Item 1</li>
+       <li>Item 2</li>
+     </ul>
+     ```
+   - Lista ordenada:
+     ```html
+     <ol>
+       <li>Passo 1</li>
+       <li>Passo 2</li>
+     </ol>
+     ```
 
 ---
-✍️ *Atualizado em: 05/08/2025*
-```
+✍️ *Atualizado em: 06/08/2025*

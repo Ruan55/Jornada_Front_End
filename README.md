@@ -1,6 +1,5 @@
 # Jornada_Front_End
 
-```markdown
 # 🚀 Minha Jornada no Curso de Front-end - HubLightHouse
 
 Este repositório é dedicado ao registro do meu aprendizado ao longo do curso de **Front-end** oferecido pela HubLightHouse em parceria com Future Tech, FIAP, Infinity School e Intel.  

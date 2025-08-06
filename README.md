@@ -46,9 +46,7 @@ O objetivo é documentar os tópicos estudados, compartilhar códigos de exemplo
 ┃ ┗ 📜 citacoes.html
 ┗ 📜 README.md
 
-```
-
----
+``
 
 ## 📅 Dia 2 - HTML
 

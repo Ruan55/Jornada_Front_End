@@ -151,4 +151,151 @@ O objetivo é documentar os tópicos estudados, compartilhar códigos de exemplo
      ```
 
 ---
-✍️ *Atualizado em: 08/08/2025*
+---
+
+## 📅 Dia 4 - CSS
+
+1. **CSS Inline**  
+   - Aplicado diretamente dentro da tag HTML:  
+     ```html
+     <p style="color: blue; font-size: 18px;">Texto com CSS inline</p>
+     ```
+
+2. **CSS Interno**  
+   - Definido dentro da tag `<style>` no próprio documento HTML:  
+     ```html
+     <head>
+       <style>
+         p {
+           color: red;
+           font-size: 20px;
+         }
+       </style>
+     </head>
+     <body>
+       <p>Texto com CSS interno</p>
+     </body>
+     ```
+
+3. **CSS Externo**  
+   - Arquivo separado (`style.css`) conectado via `<link>`:  
+     ```html
+     <head>
+       <link rel="stylesheet" href="style.css">
+     </head>
+     ```
+     **style.css**:
+     ```css
+     p {
+       color: green;
+       font-size: 22px;
+     }
+     ```
+
+4. **Seletores, Classes e IDs**  
+   - **Seletor de elemento:**  
+     ```css
+     p {
+       color: purple;
+     }
+     ```
+   - **Classe (.)**  
+     ```css
+     .destaque {
+       background-color: yellow;
+     }
+     ```
+     ```html
+     <p class="destaque">Texto destacado</p>
+     ```
+   - **ID (#)**  
+     ```css
+     #titulo {
+       font-size: 28px;
+     }
+     ```
+     ```html
+     <h1 id="titulo">Título com ID</h1>
+     ```
+
+5. **Color**  
+   - Definição de cores em CSS:
+     ```css
+     h1 {
+       color: red;               /* Nome da cor */
+     }
+     p {
+       color: #00ff00;           /* Hexadecimal */
+     }
+     span {
+       color: rgb(0, 0, 255);    /* RGB */
+     }
+     div {
+       color: hsl(200, 100%, 50%); /* HSL */
+     }
+     ```
+
+---
+---
+
+## 📅 Dia 5 - CSS
+
+1. **Background**  
+   - Definição de cor ou imagem de fundo:
+     ```css
+     body {
+       background-color: lightgray;
+     }
+
+     div {
+       background-image: url("fundo.jpg");
+       background-repeat: no-repeat;
+       background-size: cover;
+     }
+     ```
+
+2. **Border**  
+   - Personalizando bordas:
+     ```css
+     p {
+       border: 2px solid black;    /* largura, estilo e cor */
+       border-radius: 10px;        /* borda arredondada */
+     }
+     ```
+
+3. **Margin**  
+   - Espaçamento externo (fora do elemento):
+     ```css
+     div {
+       margin: 20px;            /* aplica em todos os lados */
+       margin: 10px 20px;       /* vertical | horizontal */
+       margin: 5px 10px 15px;   /* top | laterais | bottom */
+       margin: 5px 10px 15px 20px; /* top | right | bottom | left */
+     }
+     ```
+
+4. **Padding**  
+   - Espaçamento interno (dentro do elemento):
+     ```css
+     div {
+       padding: 15px;            /* todos os lados */
+       padding: 10px 20px;       /* vertical | horizontal */
+     }
+     ```
+
+5. **Width e Height**  
+   - Definindo largura e altura dos elementos:
+     ```css
+     img {
+       width: 300px;
+       height: 200px;
+     }
+
+     div {
+       width: 50%;      /* metade da largura do elemento pai */
+       height: auto;    /* ajusta automaticamente */
+     }
+     ```
+
+---
+✍️ *Atualizado em: 16/08/2025*

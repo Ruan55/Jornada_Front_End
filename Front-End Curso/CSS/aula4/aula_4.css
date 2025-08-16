@@ -1,0 +1,51 @@
+/* Seletor Universal */
+*{
+
+    padding: 20px;
+
+}
+
+
+/* Seletores */
+body{
+
+    background-color: lightgray;
+
+}
+
+p{
+
+    color: red;
+
+}
+
+/* Classes */
+.paragrafo_1{
+
+    text-align: center;
+    color: red;
+
+}
+
+.paragrafo_2{
+
+    color: blue;
+    font-weight: bold;
+
+}
+
+.paragrafo_3{
+
+    color: green;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+/* Id */
+#titulo-principal{
+
+    background-color: black;
+    color: white;
+    text-align: center;
+
+}

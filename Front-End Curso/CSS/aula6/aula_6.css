@@ -1,0 +1,19 @@
+body{
+
+    /* Propriedade background */
+    background: blue;
+
+}
+
+.exemplo-background{
+
+    height: 300px;
+    
+    /* Variações da Propriedade background */
+    background-color: gray;
+    background-image: url('https://noticias.maisesports.com.br/wp-content/uploads/2024/07/mapa-ascent-valorant-3-1120x630.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}

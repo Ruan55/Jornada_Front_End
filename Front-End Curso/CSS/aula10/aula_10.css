@@ -1,0 +1,11 @@
+.exemplo-width_height{
+
+    border: 5px solid green;
+
+    /* Propriedade width (Largura) */
+    width: 300px;
+
+    /* Propriedade height (Altura) */
+    height: 150px;
+
+}

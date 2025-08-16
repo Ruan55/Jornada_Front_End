@@ -1,0 +1,19 @@
+.exemplo-padding{
+
+    border: 5px solid red;
+    height: 300px;
+    margin: 20px;
+
+    /* Propriedade padding */
+    padding: 20px;
+
+}
+
+.exemplo-padding2{
+
+     border: 5px solid red;
+     height: 300px;
+     margin: 20px;
+     padding: 20px;   
+
+}

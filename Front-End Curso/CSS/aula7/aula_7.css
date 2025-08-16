@@ -1,0 +1,50 @@
+.exemplo-border{
+
+    /* Propriedade border */
+    border: 3px solid red;
+    height: 300px;
+    margin: 20px;
+
+}
+.exemplo-border2{
+
+    /* Propriedade border */
+    border: 3px dotted red;
+    height: 300px;
+    margin: 20px;
+
+}
+.exemplo-border3{
+
+    /* Propriedade border */
+    border: 3px dashed red;
+    height: 300px;
+    margin: 20px;
+
+}
+.exemplo-border4{
+
+    /* Propriedade border */
+    border: 3px groove red;
+    height: 300px;
+    margin: 20px;
+
+}
+.exemplo-border5{
+
+    /* Propriedade border */
+    border: 3px ridge red;
+    height: 300px;
+    margin: 20px;
+
+}
+
+.exemplo-border6{
+
+    /* Propriedade border */
+    border: 3px ridge red;
+    border-radius: 50%;
+    height: 300px;
+    margin: 20px;
+
+}

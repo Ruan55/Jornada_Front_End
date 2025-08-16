@@ -1,0 +1,16 @@
+.exemplo-margin{
+
+    border: 5px solid red;
+    height: 300px;
+
+    /* Propriedade Margin */
+    margin: 20px;
+
+}
+
+.exemplo-margin2{
+
+    border: 5px solid blue;
+    height: 300px;
+
+}

@@ -298,4 +298,88 @@ O objetivo é documentar os tópicos estudados, compartilhar códigos de exemplo
      ```
 
 ---
-✍️ *Atualizado em: 16/08/2025*
+---
+
+## 📅 Dia 6 - CSS
+
+1. **Text**  
+   - Propriedades para estilização de texto:
+     ```css
+     p {
+       text-align: center;       /* alinhamento: left | right | center | justify */
+       text-decoration: underline; /* decoração: none | underline | line-through */
+       text-transform: uppercase;  /* transformação: uppercase | lowercase | capitalize */
+       letter-spacing: 2px;      /* espaçamento entre letras */
+       line-height: 1.5;         /* altura da linha */
+     }
+     ```
+
+2. **Font**  
+   - Controle de fonte e estilo:
+     ```css
+     body {
+       font-family: Arial, Helvetica, sans-serif; /* família da fonte */
+       font-size: 16px;          /* tamanho */
+       font-weight: bold;        /* espessura: normal | bold | lighter | 100–900 */
+       font-style: italic;       /* estilo: normal | italic | oblique */
+     }
+     ```
+
+3. **Estilização de Links**  
+   - Personalização dos estados do link:
+     ```css
+     a {
+       color: blue;
+       text-decoration: none;   /* remove o sublinhado */
+     }
+
+     a:hover {
+       color: red;              /* quando o mouse passa por cima */
+     }
+
+     a:active {
+       color: green;            /* quando o link é clicado */
+     }
+
+     a:visited {
+       color: purple;           /* links já visitados */
+     }
+     ```
+
+4. **Display**  
+   - Controle de exibição de elementos:
+     ```css
+     div {
+       display: block;   /* padrão para div */
+     }
+
+     span {
+       display: inline;  /* padrão para span */
+     }
+
+     li {
+       display: inline-block; /* mistura inline e block */
+     }
+
+     .oculto {
+       display: none;    /* remove da tela */
+     }
+     ```
+
+5. **Max-width**  
+   - Define a largura máxima do elemento (responsividade):
+     ```css
+     img {
+       max-width: 100%;   /* imagem nunca ultrapassa o container */
+       height: auto;      /* mantém a proporção */
+     }
+
+     div {
+       max-width: 800px;
+       margin: 0 auto;    /* centraliza na tela */
+     }
+     ```
+
+---
+✍️ *Atualizado em: 10/08/2025*
+

@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+h1{
+
+    text-align: center;
+
+    /* Propriedade font importada */
+    font-family: "Roboto", sans-serif;
+
+}
+
+p{
+
+    /* Propriedade font */
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-style: oblique;
+    font-weight: bold;
+
+    text-indent: 15px;
+    letter-spacing: 5px;
+    line-height: 1.5;
+    word-spacing: 15px;
+
+}

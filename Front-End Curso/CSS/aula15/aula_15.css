@@ -1,0 +1,17 @@
+.exemplo-1{
+
+    border: 1px solid blue;
+
+    /* Propriedade max-width */
+    max-width: 800px;
+
+}
+
+.exemplo-2{
+
+    border: 1px solid purple;
+
+    /* Propriedade max-width */
+    max-width: 800px;
+
+}

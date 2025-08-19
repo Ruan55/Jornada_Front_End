@@ -381,5 +381,127 @@ O objetivo é documentar os tópicos estudados, compartilhar códigos de exemplo
      ```
 
 ---
-✍️ *Atualizado em: 18/08/2025*
+---
+
+## 📅 Dia 7 - CSS
+
+1. **Position**  
+   - Controla a posição dos elementos na página:  
+     ```css
+     .estatico {
+       position: static;   /* padrão */
+     }
+
+     .relativo {
+       position: relative; /* relativo à posição normal */
+       top: 10px;
+       left: 20px;
+     }
+
+     .absoluto {
+       position: absolute; /* relativo ao elemento pai com position diferente de static */
+       top: 0;
+       right: 0;
+     }
+
+     .fixo {
+       position: fixed;    /* fixo na tela, mesmo ao rolar */
+       bottom: 0;
+       right: 0;
+     }
+
+     .grudento {
+       position: sticky;   /* fica fixo após certo ponto */
+       top: 0;
+     }
+     ```
+
+2. **Overflow**  
+   - Controla o conteúdo que ultrapassa o tamanho do elemento:  
+     ```css
+     div {
+       width: 200px;
+       height: 100px;
+       overflow: visible;   /* padrão */
+       overflow: hidden;    /* esconde conteúdo extra */
+       overflow: scroll;    /* adiciona barras de rolagem */
+       overflow: auto;      /* adiciona scroll somente se necessário */
+     }
+     ```
+
+3. **Float**  
+   - Posiciona elementos lado a lado:  
+     ```css
+     img {
+       float: left;   /* flutua à esquerda */
+     }
+
+     p {
+       float: right;  /* flutua à direita */
+     }
+     ```
+
+4. **Opacity**  
+   - Define a transparência do elemento:  
+     ```css
+     .transparente {
+       opacity: 0.5;   /* 0 = totalmente invisível | 1 = totalmente visível */
+     }
+     ```
+
+5. **Efeito Dropdown (Menu Suspenso)**  
+   - Estrutura de menu suspenso usando `:hover`:  
+     ```html
+     <div class="dropdown">
+       <button class="dropbtn">Menu</button>
+       <div class="dropdown-content">
+         <a href="#">Opção 1</a>
+         <a href="#">Opção 2</a>
+         <a href="#">Opção 3</a>
+       </div>
+     </div>
+     ```
+
+     ```css
+     .dropdown {
+       position: relative;
+       display: inline-block;
+     }
+
+     .dropbtn {
+       background-color: #3498db;
+       color: white;
+       padding: 10px;
+       border: none;
+       cursor: pointer;
+     }
+
+     .dropdown-content {
+       display: none;
+       position: absolute;
+       background-color: #f9f9f9;
+       min-width: 160px;
+       box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+       z-index: 1;
+     }
+
+     .dropdown-content a {
+       color: black;
+       padding: 10px;
+       text-decoration: none;
+       display: block;
+     }
+
+     .dropdown-content a:hover {
+       background-color: #ddd;
+     }
+
+     .dropdown:hover .dropdown-content {
+       display: block;   /* Mostra o menu ao passar o mouse */
+     }
+     ```
+
+---
+✍️ *Atualizado em: 19/08/2025*
+
 

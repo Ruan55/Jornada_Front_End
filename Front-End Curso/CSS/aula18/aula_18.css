@@ -1,0 +1,57 @@
+.container{
+
+    border: 4px solid black;
+    overflow: auto;
+
+}
+
+.container img{
+
+    /* Propriedade float */
+    float: left;
+    
+}
+
+ul{
+    
+    background-color: black;
+    padding: 20px;
+    
+}
+
+li{
+    
+    display: inline-block;
+    
+}
+
+li a{
+    
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    
+}
+
+li a:hover{
+    
+    background-color: rgba(255, 255, 255, 0.973);
+    color: black;
+    transition: 1s ease;
+    
+}
+
+.login{
+    
+    /* Propriedade float */
+    float: right;
+
+}
+
+.login a:hover{
+
+    background-color: yellowgreen;
+    transition: 1s ease;
+
+}

@@ -1,0 +1,60 @@
+.container{
+
+    /* Propriedade position */
+    position: relative;
+    background-color: blue;
+    width: 100%;
+    height: 400px;
+
+}
+
+.primeira-div{
+
+    /* Propriedade position */
+    position: static;
+    width: 30%;
+    height: 100px;
+    background-color: yellow;
+    display: inline-block;
+}
+
+.segunda-div{
+    
+    /* Propriedade position */
+    position: sticky;
+    top: 0;
+    left: 20px;
+    width: 30%;
+    height: 100px;
+    background-color: rgb(240, 11, 202);
+    display: inline-block;
+    
+}
+
+.terceira-div{
+    
+    width: 30%;
+    height: 100px;
+    background-color: red;
+    display: inline-block;
+    /* Propriedade position */
+    position: absolute;
+    top: 150px;
+    right: 50%;
+    
+}
+
+.whats{
+    
+    background-color: green;
+    color: white;
+    width: 80px;
+    height: 80px;
+    bottom: 10px;
+    right: 10px;
+
+    /* Propriedade position */
+    position: fixed;
+    z-index: -1;
+
+}

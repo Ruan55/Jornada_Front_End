@@ -1,0 +1,35 @@
+.img1:hover{
+
+    /* Propriedade opacity */
+    opacity: 0.5;
+    
+}
+
+.img2{
+    
+    /* Propriedade opacity */
+    opacity: 1;
+    
+}
+
+.img3{
+    
+    /* Propriedade opacity */
+    opacity: 1;
+
+}
+
+a.botao{
+
+    padding: 15px;
+    background-color: green;
+    color: white;
+    text-decoration: none;
+
+}
+
+a.botao:hover{
+
+    opacity: 0.9;
+
+}

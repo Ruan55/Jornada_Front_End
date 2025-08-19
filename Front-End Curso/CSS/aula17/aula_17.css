@@ -1,0 +1,10 @@
+.exemplo{
+
+    background-color: blue;
+    color: black;
+    height: 150px;
+
+    /* Propriedade overflow */
+    overflow: auto;
+
+}

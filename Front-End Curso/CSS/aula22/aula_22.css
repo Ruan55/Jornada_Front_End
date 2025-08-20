@@ -1,0 +1,18 @@
+#meuid{
+
+    color: red;
+
+}
+
+.minhaclasse{
+
+    color: blue;
+
+}
+
+/* Regra Important */
+h1{
+
+    color: green !important;
+
+}

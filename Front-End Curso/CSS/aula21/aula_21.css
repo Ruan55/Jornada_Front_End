@@ -1,0 +1,27 @@
+/* Prioridade 1 */
+#titulo{
+    
+    background-color: green;
+    
+}
+
+/* Prioridade 2 */
+.red{
+    
+    background-color: red;
+    
+}
+
+/* Prioridade 3 */
+h1.red{
+    
+    background-color: brown;
+    
+}
+
+/* Prioridade 4 */
+h1{
+
+    background-color: black;
+
+}

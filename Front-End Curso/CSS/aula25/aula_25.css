@@ -1,0 +1,15 @@
+p{
+
+    /* Efeitos de texto */
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    
+}
+
+p:hover{
+    
+    /* Efeitos de texto */
+    white-space: normal;
+
+}

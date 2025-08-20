@@ -502,6 +502,66 @@ O objetivo é documentar os tópicos estudados, compartilhar códigos de exemplo
      ```
 
 ---
-✍️ *Atualizado em: 19/08/2025*
 
+## 📅 Dia 8 - CSS
 
+1. **Especificidades CSS**  
+   - O CSS aplica estilos de acordo com uma hierarquia de prioridade:
+     - **Inline** > **ID** > **Classe/Pseudo-classe/Atributo** > **Elemento**
+     ```css
+     p { color: blue; }           /* menor prioridade */
+     .texto { color: green; }     /* classe */
+     #paragrafo { color: red; }   /* id */
+     <p id="paragrafo" class="texto" style="color: purple;"> <!-- cor final = purple -->
+     ```
+
+2. **Regra `!important`**  
+   - Força a prioridade de uma propriedade, ignorando outras regras:
+     ```css
+     p {
+       color: red !important;
+     }
+     ```
+
+3. **Efeito Gradiente**  
+   - Gradiente linear e radial:
+     ```css
+     div {
+       background: linear-gradient(to right, red, yellow);
+     }
+
+     section {
+       background: radial-gradient(circle, blue, lightblue);
+     }
+     ```
+
+4. **Propriedades `text-shadow` e `box-shadow`**  
+   - **Sombra em texto:**
+     ```css
+     h1 {
+       text-shadow: 2px 2px 5px gray;  /* deslocamento-x | deslocamento-y | blur | cor */
+     }
+     ```
+   - **Sombra em caixa:**
+     ```css
+     div {
+       box-shadow: 4px 4px 10px rgba(0,0,0,0.3);
+     }
+     ```
+
+5. **Efeitos de Texto**  
+   - Personalização avançada:
+     ```css
+     h2 {
+       text-transform: uppercase;   /* maiúsculas */
+       text-decoration: underline;  /* sublinhado */
+       letter-spacing: 3px;         /* espaçamento entre letras */
+       word-spacing: 10px;          /* espaçamento entre palavras */
+       background: linear-gradient(to right, #ff7e5f, #feb47b);
+       -webkit-background-clip: text;
+       -webkit-text-fill-color: transparent; /* efeito gradiente no texto */
+     }
+     ```
+
+---
+✍️ *Atualizado em: 20/08/2025*

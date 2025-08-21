@@ -564,4 +564,64 @@ O objetivo é documentar os tópicos estudados, compartilhar códigos de exemplo
      ```
 
 ---
-✍️ *Atualizado em: 20/08/2025*
+
+---
+
+## 📅 Dia 9 - CSS
+
+1. **Media Queries**  
+   - Permitem aplicar estilos diferentes dependendo do tamanho da tela ou dispositivo.  
+   - Estrutura básica:
+     ```css
+     @media (condição) {
+       /* estilos aplicados apenas quando a condição for verdadeira */
+     }
+     ```
+
+   - **Exemplos práticos:**
+     ```css
+     /* Estilo para telas menores que 600px */
+     @media (max-width: 600px) {
+       body {
+         background-color: lightblue;
+       }
+
+       h1 {
+         font-size: 20px;
+       }
+     }
+
+     /* Estilo para telas entre 601px e 1024px */
+     @media (min-width: 601px) and (max-width: 1024px) {
+       body {
+         background-color: lightgreen;
+       }
+     }
+
+     /* Estilo para telas maiores que 1024px */
+     @media (min-width: 1025px) {
+       body {
+         background-color: lightgray;
+       }
+     }
+     ```
+
+   - **Media queries por orientação:**
+     ```css
+     /* Estilo aplicado apenas no modo retrato */
+     @media (orientation: portrait) {
+       body {
+         font-size: 14px;
+       }
+     }
+
+     /* Estilo aplicado apenas no modo paisagem */
+     @media (orientation: landscape) {
+       body {
+         font-size: 18px;
+       }
+     }
+     ```
+
+---
+✍️ *Atualizado em: 21/08/2025*

@@ -1,0 +1,89 @@
+h2{
+
+    color: white;
+    font-size: 14px;
+
+}
+
+/* Smartphones */
+@media only screen and (max-width: 600px){
+
+    body{
+
+        background-color: blue;
+
+    }
+
+}
+
+/* Dispositivos um pouco maiores, mas ainda pequeno */
+@media only screen and (min-width: 600px){
+
+    body{
+
+        background-color: green;
+
+    }
+
+}
+
+/* Dispositivos médios (Tablets deitados) */
+@media only screen and (min-width: 768px){
+
+    body{
+
+        background-color: yellow;
+
+    }
+
+}
+
+/* Dispositivos largos (laptops/desktop) */
+@media only screen and (min-width: 992px){
+
+    body{
+
+        background-color: red;
+
+    }
+
+    h2{
+
+        font-size: 22px;
+
+    }
+
+    .exemplo{
+
+        display: none;
+
+    }
+
+}
+
+/* Super largos (Telas maiores laptops) */
+@media only screen and (min-width: 1200px){
+
+    body{
+
+        background-color: violet;
+
+    }
+
+    h2{
+
+        font-size: 22px;
+
+    }
+
+}
+
+/* 
+
+ Maneira Alternativa
+
+ @media screen and (max-width: 900px) and (min-width: 600px){
+ 
+ }
+
+*/

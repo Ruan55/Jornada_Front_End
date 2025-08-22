@@ -622,6 +622,142 @@ O objetivo é documentar os tópicos estudados, compartilhar códigos de exemplo
        }
      }
      ```
+---
+
+## 📅 Dia 10 - CSS (Flexbox)
+
+1. **O que é Flexbox?**  
+   - Um modelo de layout unidimensional que organiza elementos em **linha (row)** ou **coluna (column)**.
+   - Habilitado pela propriedade `display: flex;` no container.
 
 ---
-✍️ *Atualizado em: 21/08/2025*
+
+### **Propriedades do Container (Pai)**
+
+- **display**
+  ```css
+  .container {
+    display: flex;   /* ativa o flexbox */
+  }
+````
+
+* **flex-direction**
+
+  ```css
+  .container {
+    flex-direction: row;        /* padrão: linha */
+    flex-direction: column;     /* coluna */
+    flex-direction: row-reverse; /* linha invertida */
+  }
+  ```
+
+* **justify-content** (alinhamento no eixo principal)
+
+  ```css
+  .container {
+    justify-content: flex-start; /* padrão */
+    justify-content: center;
+    justify-content: flex-end;
+    justify-content: space-between;
+    justify-content: space-around;
+    justify-content: space-evenly;
+  }
+  ```
+
+* **align-items** (alinhamento no eixo cruzado)
+
+  ```css
+  .container {
+    align-items: stretch; /* padrão */
+    align-items: center;
+    align-items: flex-start;
+    align-items: flex-end;
+    align-items: baseline;
+  }
+  ```
+
+* **flex-wrap** (quebra de linha)
+
+  ```css
+  .container {
+    flex-wrap: nowrap; /* padrão */
+    flex-wrap: wrap;   /* quebra em novas linhas */
+  }
+  ```
+
+---
+
+### **Propriedades dos Itens (Filhos)**
+
+* **order** (ordem de exibição)
+
+  ```css
+  .item {
+    order: 1; /* menor número = aparece primeiro */
+  }
+  ```
+
+* **flex-grow** (quanto o item cresce)
+
+  ```css
+  .item {
+    flex-grow: 1; /* cresce proporcionalmente */
+  }
+  ```
+
+* **flex-shrink** (quanto o item encolhe)
+
+  ```css
+  .item {
+    flex-shrink: 1; /* encolhe proporcionalmente */
+  }
+  ```
+
+* **flex-basis** (tamanho inicial antes da distribuição)
+
+  ```css
+  .item {
+    flex-basis: 200px;
+  }
+  ```
+
+* **align-self** (alinhamento individual)
+
+  ```css
+  .item {
+    align-self: center; /* sobrescreve align-items */
+  }
+  ```
+
+---
+
+### **Exemplo Prático:**
+
+```html
+<div class="container">
+  <div class="item">1</div>
+  <div class="item">2</div>
+  <div class="item">3</div>
+</div>
+```
+
+```css
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 200px;
+  background-color: #eee;
+}
+
+.item {
+  background: #3498db;
+  color: white;
+  padding: 20px;
+  font-size: 18px;
+}
+```
+
+---
+
+✍️ *Atualizado em: 14/08/2025*

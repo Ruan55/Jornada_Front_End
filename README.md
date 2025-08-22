@@ -639,7 +639,6 @@ O objetivo é documentar os tópicos estudados, compartilhar códigos de exemplo
   .container {
     display: flex;   /* ativa o flexbox */
   }
-````
 
 * **flex-direction**
 
@@ -760,4 +759,4 @@ O objetivo é documentar os tópicos estudados, compartilhar códigos de exemplo
 
 ---
 
-✍️ *Atualizado em: 14/08/2025*
+✍️ *Atualizado em: 22/08/2025*

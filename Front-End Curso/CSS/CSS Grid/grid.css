@@ -1,0 +1,91 @@
+*{
+
+    margin: 0;
+    padding: 0;
+
+}
+
+#container{
+
+    /* Display grid */
+    display: grid;
+
+    /* Define o número e o tamanho das colunas em um layout CSS Grid */
+    /* grid-template-columns: 1fr 1fr 4fr 200px; 1fr = Medida por fração */
+
+    /* grid-template-columns: repeat(2, 2fr) repeat(2, 4fr); Repeat(): É usada para definir um padrão de colunas ou linhas repetidas de maneira conscisa, em vez de listar explicitamente cada faixa individual */
+
+    /* grid-template-columns: repeat(3, minmax(200px, 3fr)); minmax(): Essa função torna possível definir o tamanho de uma track do grid com um intervalo mínimo e máximo */
+
+    /* Define a estrutura de uma grade nomeando áreas específicas dentro dela. */
+    /* grid-template-areas: 
+    "header header header"
+    "aside article section"
+    "footer footer footer"; */
+
+
+
+    /* Define explicitamente as linhas de um contêiner de grade */
+    /* grid-template-rows: 200px 100px 50px; */
+
+    /* É uma propriedade abreviada que permite especificar a lacuna entre linhas e colunas em um layout CSS Grid */
+    gap: 10px; 
+
+    /* Controla o alinhamento dos itens da grade dentro de suas células de grade individuais ao longo do eixo inline */
+    /* justify-items: end; */
+    
+
+    /* Controla como os itens da grade são alinhados ao longo do eixo do bloco (coluna) dentro de suas células de grades individuais */
+    /* align-items: center; */
+
+    /* Controla o alinhamento de toda a grade ao longo do eixo embutido (eixo horizontal) dentro do seu contêiner */
+    /* justify-content: stretch; */
+
+    /* A propriedade controla o alinhamento de toda a grade dentro do seu contêiner ao longo do eixo do bloco (eixo vertical). */
+    /* align-content: end; */
+
+    /* É usada para definir o tamanho das linhas de grades criadas implicitamente */
+    /* grid-auto-rows: 200px; */
+
+    grid-template-rows: 100px;
+
+}
+
+header{
+
+    background-color: blueviolet;
+    /* grid-column: 2; É uma propriedade abreviada usada para definir o tamanho e a localização de um item da grade dentro das colunas da grade. */
+    /* grid-row: 5; Especifica o tamanho e a localização de um item da grade dentro das linhas de grade */
+
+    /* Alinha um único item de grade dentro da sua célula de grade individual ao longo do eixo embutido (horizontal) */
+    /* justify-self: center;  */
+
+    /* Alinha um único item de grade dentro da sua área de grade ao longo do eixo do bloco (vertical) */
+    align-self: center;
+
+}
+
+aside{
+
+    background-color: blue;
+    /* grid-column: span 3; */
+
+}
+
+article{
+
+    background-color: greenyellow;
+
+}
+
+section{
+
+    background-color: lightblue;
+
+}
+
+footer{
+
+    background-color: red;
+
+}

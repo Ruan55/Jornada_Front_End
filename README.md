@@ -847,4 +847,4 @@ console.log("Tipo de idade:", typeof idadeNumero); // number
 
 ---
 
-✍️ *Atualizado em: 15/08/2025*
+✍️ *Atualizado em: 05/09/2025*

@@ -759,4 +759,92 @@ O objetivo é documentar os tópicos estudados, compartilhar códigos de exemplo
 
 ---
 
-✍️ *Atualizado em: 22/08/2025*
+---
+
+## 📅 Dia 11 - JavaScript
+
+1. **Variáveis**  
+   - Usadas para armazenar valores.  
+   - Em JavaScript existem três formas de declarar:
+     ```js
+     var nome = "Ruan";    // forma mais antiga (evitar em projetos grandes)
+     let idade = 23;       // escopo de bloco (recomendado)
+     const PI = 3.1415;    // constante (não pode ser reatribuída)
+     ```
+
+---
+
+2. **Tipos Primitivos**  
+   - **String (texto):**
+     ```js
+     let nome = "Ruan";
+     ```
+   - **Number (números inteiros ou decimais):**
+     ```js
+     let idade = 23;
+     let altura = 1.75;
+     ```
+   - **Boolean (verdadeiro ou falso):**
+     ```js
+     let ativo = true;
+     ```
+   - **Undefined (não definido):**
+     ```js
+     let valor;
+     console.log(valor); // undefined
+     ```
+   - **Null (nulo propositalmente):**
+     ```js
+     let vazio = null;
+     ```
+   - **Symbol e BigInt (menos usados, mas importantes):**
+     ```js
+     let simbolo = Symbol("id");
+     let numeroGrande = 123456789012345678901234567890n;
+     ```
+
+---
+
+3. **Tratamento de Dados**  
+   - **Conversão de String para Número:**
+     ```js
+     let numero = "42";
+     console.log(Number(numero)); // 42
+     console.log(parseInt(numero)); // 42 (inteiro)
+     console.log(parseFloat("42.5")); // 42.5 (decimal)
+     ```
+
+   - **Conversão de Número para String:**
+     ```js
+     let idade = 23;
+     console.log(String(idade)); // "23"
+     console.log(idade.toString()); // "23"
+     ```
+
+   - **Verificando tipos de dados:**
+     ```js
+     let nome = "Ruan";
+     console.log(typeof nome); // "string"
+
+     let ativo = true;
+     console.log(typeof ativo); // "boolean"
+     ```
+
+---
+
+### **Exemplo Prático**
+```js
+let nome = "Ruan";
+let idade = "23";
+
+// Convertendo string para número
+let idadeNumero = Number(idade);
+
+console.log("Nome:", nome);              // Nome: Ruan
+console.log("Idade + 2:", idadeNumero + 2); // 25
+console.log("Tipo de idade:", typeof idadeNumero); // number
+````
+
+---
+
+✍️ *Atualizado em: 15/08/2025*

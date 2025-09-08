@@ -847,4 +847,91 @@ console.log("Tipo de idade:", typeof idadeNumero); // number
 
 ---
 
-✍️ *Atualizado em: 05/09/2025*
+## 📅 Dia 12 - JavaScript (Operadores)
+
+1. **Operadores Aritméticos**  
+   - Usados em cálculos matemáticos:
+     ```js
+     let a = 10;
+     let b = 3;
+
+     console.log(a + b); // 13 (adição)
+     console.log(a - b); // 7  (subtração)
+     console.log(a * b); // 30 (multiplicação)
+     console.log(a / b); // 3.333... (divisão)
+     console.log(a % b); // 1  (módulo/resto)
+     console.log(a ** b); // 1000 (exponenciação)
+     ```
+
+---
+
+2. **Operadores de Atribuição**  
+   - Usados para atribuir valores às variáveis:
+     ```js
+     let x = 5;
+
+     x += 2; // x = x + 2 → 7
+     x -= 1; // x = x - 1 → 6
+     x *= 3; // x = x * 3 → 18
+     x /= 2; // x = x / 2 → 9
+     x %= 4; // x = x % 4 → 1
+     x **= 3; // x = x ** 3 → 1
+     ```
+
+---
+
+3. **Operadores Relacionais**  
+   - Usados para comparar valores (retornam `true` ou `false`):
+     ```js
+     let a = 5;
+     let b = "5";
+     let c = 10;
+
+     console.log(a == b);  // true  (igualdade de valor)
+     console.log(a === b); // false (igualdade de valor e tipo)
+     console.log(a != b);  // false (diferente de valor)
+     console.log(a !== b); // true  (diferente de valor ou tipo)
+     console.log(a > c);   // false
+     console.log(a < c);   // true
+     console.log(a >= 5);  // true
+     console.log(c <= 10); // true
+     ```
+
+---
+
+4. **Operadores Lógicos**  
+   - Usados em expressões condicionais:
+     ```js
+     let idade = 20;
+
+     console.log(idade > 18 && idade < 30); // true (E)
+     console.log(idade < 18 || idade > 30); // false (OU)
+     console.log(!(idade > 18)); // false (NÃO)
+     ```
+
+---
+
+5. **Operador Ternário**  
+   - Forma simplificada de escrever um `if/else`:
+     ```js
+     let idade = 18;
+
+     let resultado = (idade >= 18) ? "Maior de idade" : "Menor de idade";
+     console.log(resultado); // "Maior de idade"
+     ```
+
+---
+
+### **Exemplo Prático**
+```js
+let a = 10;
+let b = 5;
+
+console.log("Soma:", a + b);
+console.log("Maior que?", a > b);
+console.log("E lógico:", a > 5 && b < 10);
+
+let mensagem = (a % 2 === 0) ? "Número par" : "Número ímpar";
+console.log(mensagem); // "Número par"
+````
+✍️ *Atualizado em: 08/09/2025*

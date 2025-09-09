@@ -934,4 +934,82 @@ console.log("E lógico:", a > 5 && b < 10);
 let mensagem = (a % 2 === 0) ? "Número par" : "Número ímpar";
 console.log(mensagem); // "Número par"
 ````
-✍️ *Atualizado em: 08/09/2025*
+---
+
+## 📅 Dia 13 - JavaScript (DOM e Eventos)
+
+1. **Introdução ao DOM (Document Object Model)**  
+   - O **DOM** é a representação da página HTML como uma árvore de objetos que o JavaScript pode manipular.  
+   - Permite **acessar e alterar** elementos, estilos, atributos e conteúdo de uma página.
+
+   - **Selecionando elementos:**
+     ```js
+     document.getElementById("titulo");       // seleciona pelo id
+     document.getElementsByClassName("item"); // seleciona pela classe
+     document.getElementsByTagName("p");      // seleciona pela tag
+     document.querySelector(".classe");       // retorna o primeiro que encontrar
+     document.querySelectorAll("p");          // retorna todos
+     ```
+
+   - **Alterando conteúdo e estilo:**
+     ```js
+     let titulo = document.getElementById("titulo");
+     titulo.innerText = "Novo título";   // altera o texto
+     titulo.style.color = "blue";        // altera a cor
+     ```
+
+---
+
+2. **Eventos DOM**  
+   - Um evento é **algo que acontece na página**, como um clique, digitação ou movimento do mouse.  
+   - Podemos "escutar" e reagir a esses eventos com JavaScript.
+
+   - **Eventos comuns:**
+     - `onclick` → quando o usuário clica  
+     - `onmouseover` → quando o mouse passa por cima  
+     - `onchange` → quando o valor de um input muda  
+     - `onkeydown` → quando uma tecla é pressionada  
+
+   - **Exemplo 1 – Usando atributo HTML:**
+     ```html
+     <button onclick="mensagem()">Clique aqui</button>
+
+     <script>
+       function mensagem() {
+         alert("Você clicou no botão!");
+       }
+     </script>
+     ```
+
+   - **Exemplo 2 – Usando addEventListener:**
+     ```html
+     <button id="btn">Clique em mim</button>
+
+     <script>
+       let botao = document.getElementById("btn");
+       botao.addEventListener("click", function() {
+         alert("Botão clicado com addEventListener!");
+       });
+     </script>
+     ```
+
+   - **Exemplo 3 – Mudando estilo com evento:**
+     ```html
+     <p id="texto">Passe o mouse sobre este texto</p>
+
+     <script>
+       let texto = document.getElementById("texto");
+
+       texto.addEventListener("mouseover", function() {
+         texto.style.color = "red";
+       });
+
+       texto.addEventListener("mouseout", function() {
+         texto.style.color = "black";
+       });
+     </script>
+     ```
+
+---
+
+✍️ *Atualizado em: 09/09/2025*

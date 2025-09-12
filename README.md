@@ -1012,4 +1012,103 @@ console.log(mensagem); // "Número par"
 
 ---
 
-✍️ *Atualizado em: 09/09/2025*
+---
+
+## 📅 Dia 14 - JavaScript (Condições)
+
+1. **Condições Simples (`if`)**  
+   - Usada quando queremos executar um bloco de código apenas se uma condição for verdadeira:
+     ```js
+     let idade = 18;
+
+     if (idade >= 18) {
+       console.log("Você é maior de idade");
+     }
+     ```
+
+---
+
+2. **Condições Compostas (`if/else`)**  
+   - Usada quando precisamos de **duas possibilidades**:
+     ```js
+     let hora = 20;
+
+     if (hora < 18) {
+       console.log("Boa tarde!");
+     } else {
+       console.log("Boa noite!");
+     }
+     ```
+
+---
+
+3. **Condições Encadeadas (`if/else if/else`)**  
+   - Usada quando temos **mais de duas condições**:
+     ```js
+     let nota = 7;
+
+     if (nota >= 9) {
+       console.log("Aprovado com excelência!");
+     } else if (nota >= 6) {
+       console.log("Aprovado");
+     } else {
+       console.log("Reprovado");
+     }
+     ```
+
+---
+
+4. **Condição Aninhada (if dentro de if)**  
+   - Um `if` dentro de outro `if`:
+     ```js
+     let idade = 20;
+     let temCarteira = true;
+
+     if (idade >= 18) {
+       if (temCarteira) {
+         console.log("Pode dirigir");
+       } else {
+         console.log("Precisa tirar a carteira");
+       }
+     } else {
+       console.log("Ainda não pode dirigir");
+     }
+     ```
+
+---
+
+5. **Switch Case**  
+   - Uma alternativa ao `if/else if`, muito usado quando temos várias opções:
+     ```js
+     let cor = "azul";
+
+     switch (cor) {
+       case "vermelho":
+         console.log("A cor é vermelho");
+         break;
+       case "azul":
+         console.log("A cor é azul");
+         break;
+       case "verde":
+         console.log("A cor é verde");
+         break;
+       default:
+         console.log("Cor não encontrada");
+     }
+     ```
+
+---
+
+### **Exemplo Prático**
+```js
+let diaSemana = 3;
+
+if (diaSemana === 1) {
+  console.log("Segunda-feira");
+} else if (diaSemana === 2) {
+  console.log("Terça-feira");
+} else if (diaSemana === 3) {
+  console.log("Quarta-feira");
+} else {
+  console.log("Outro dia");
+}

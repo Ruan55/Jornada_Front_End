@@ -1112,3 +1112,93 @@ if (diaSemana === 1) {
 } else {
   console.log("Outro dia");
 }
+
+````
+
+## 📅 Dia 15 - JavaScript (Estruturas de Repetição)
+
+1. **Laço While**  
+   - Executa o bloco de código **enquanto** a condição for verdadeira.
+   ```js
+   let contador = 0;
+
+   while (contador < 5) {
+     console.log("Contagem:", contador);
+     contador++; // incrementa
+   }
+   // Saída: 0, 1, 2, 3, 4
+
+---
+
+2. **Laço Do...While**
+
+   * Executa o bloco **pelo menos uma vez**, e depois continua **enquanto** a condição for verdadeira.
+
+   ```js
+   let numero = 0;
+
+   do {
+     console.log("Número:", numero);
+     numero++;
+   } while (numero < 3);
+
+   // Saída: 0, 1, 2
+   ```
+
+---
+
+3. **Laço For**
+
+   * Mais usado quando sabemos exatamente o número de repetições.
+
+   ```js
+   for (let i = 0; i < 5; i++) {
+     console.log("Valor de i:", i);
+   }
+   // Saída: 0, 1, 2, 3, 4
+   ```
+
+---
+
+4. **For...of**
+
+   * Usado para percorrer arrays, strings e coleções iteráveis.
+
+   ```js
+   let frutas = ["maçã", "banana", "uva"];
+
+   for (let fruta of frutas) {
+     console.log(fruta);
+   }
+   // Saída: maçã, banana, uva
+   ```
+
+---
+
+5. **For...in**
+
+   * Usado para percorrer as **propriedades de um objeto**.
+
+   ```js
+   let pessoa = { nome: "Ruan", idade: 23 };
+
+   for (let chave in pessoa) {
+     console.log(chave, ":", pessoa[chave]);
+   }
+   // Saída: nome : Ruan
+   //        idade : 23
+   ```
+
+---
+
+### **Exemplo Prático**
+
+```js
+// Tabuada do 5 com FOR
+for (let i = 1; i <= 10; i++) {
+  console.log(`5 x ${i} = ${5 * i}`);
+}
+```
+
+---
+✍️ *Atualizado em: 16/09/2025*

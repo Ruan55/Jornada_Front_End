@@ -1200,5 +1200,98 @@ for (let i = 1; i <= 10; i++) {
 }
 ```
 
+## 📅 Dia 16 - JavaScript (Variáveis Compostas / Arrays)
+
+1. **O que são Variáveis Compostas (Arrays)?**  
+   - Diferente de variáveis simples (que armazenam apenas 1 valor), as variáveis compostas armazenam **vários valores em uma única estrutura**.  
+   - Em JavaScript, usamos **arrays**.
+
+   ```js
+   let numeros = [10, 20, 30, 40, 50];
+   console.log(numeros); // [10, 20, 30, 40, 50]
 ---
-✍️ *Atualizado em: 16/09/2025*
+
+2. **Acessando valores do Array**
+
+   * Cada item do array tem um **índice** (posição), começando do **0**.
+
+   ```js
+   let frutas = ["maçã", "banana", "uva"];
+
+   console.log(frutas[0]); // maçã
+   console.log(frutas[2]); // uva
+   ```
+
+---
+
+3. **Alterando valores**
+
+   ```js
+   frutas[1] = "laranja";
+   console.log(frutas); // ["maçã", "laranja", "uva"]
+   ```
+
+---
+
+4. **Propriedade Length**
+
+   * Mostra quantos elementos existem no array.
+
+   ```js
+   console.log(frutas.length); // 3
+   ```
+
+---
+
+5. **Percorrendo Arrays com For**
+
+   ```js
+   let cores = ["azul", "verde", "vermelho"];
+
+   for (let i = 0; i < cores.length; i++) {
+     console.log(cores[i]);
+   }
+   ```
+
+---
+
+6. **Percorrendo Arrays com For...of**
+
+   ```js
+   for (let cor of cores) {
+     console.log(cor);
+   }
+   ```
+
+---
+
+7. **Métodos mais usados em Arrays**
+
+   ```js
+   let numeros = [1, 2, 3];
+
+   numeros.push(4);     // adiciona no final → [1,2,3,4]
+   numeros.pop();       // remove do final → [1,2,3]
+   numeros.unshift(0);  // adiciona no início → [0,1,2,3]
+   numeros.shift();     // remove do início → [1,2,3]
+   console.log(numeros.length); // 3
+   ```
+
+---
+
+### **Exemplo Prático**
+
+```js
+let notas = [8, 6, 9, 7];
+let soma = 0;
+
+for (let nota of notas) {
+  soma += nota;
+}
+
+let media = soma / notas.length;
+console.log("Média:", media); // Média: 7.5
+```
+
+---
+✍️ *Atualizado em: 22/09/2025*

@@ -1293,5 +1293,115 @@ let media = soma / notas.length;
 console.log("Média:", media); // Média: 7.5
 ```
 
+## 📅 Dia 17 - JavaScript (Funções)
+
+1. **O que são Funções?**  
+   - Funções são **blocos de código reutilizáveis** que podem ser chamados quando necessário.  
+   - Elas podem receber **parâmetros** e retornar valores.
+
 ---
-✍️ *Atualizado em: 22/09/2025*
+
+2. **Função Simples**
+```js
+function saudacao() {
+  console.log("Olá, mundo!");
+}
+
+saudacao(); // Chamada da função
+````
+
+---
+
+3. **Função com Parâmetros**
+
+```js
+function soma(a, b) {
+  console.log("Resultado:", a + b);
+}
+
+soma(5, 3); // Resultado: 8
+```
+
+---
+
+4. **Função com Retorno**
+
+```js
+function multiplicar(x, y) {
+  return x * y;
+}
+
+let resultado = multiplicar(4, 6);
+console.log(resultado); // 24
+```
+
+---
+
+5. **Função Anônima (atribuída a variável)**
+
+```js
+let dobro = function(n) {
+  return n * 2;
+};
+
+console.log(dobro(7)); // 14
+```
+
+---
+
+6. **Arrow Function (Função de Flecha)**
+
+```js
+let quadrado = (n) => n * n;
+
+console.log(quadrado(5)); // 25
+```
+
+---
+
+7. **Parâmetro Padrão**
+
+```js
+function apresentar(nome = "Visitante") {
+  console.log("Bem-vindo, " + nome);
+}
+
+apresentar();           // Bem-vindo, Visitante
+apresentar("Ruan");     // Bem-vindo, Ruan
+```
+
+---
+
+8. **Função dentro de outra (aninhada)**
+
+```js
+function externa() {
+  function interna() {
+    console.log("Função interna chamada!");
+  }
+  interna();
+}
+
+externa();
+```
+
+---
+
+### **Exemplo Prático**
+
+```js
+function calcularMedia(notas) {
+  let soma = 0;
+  for (let nota of notas) {
+    soma += nota;
+  }
+  return soma / notas.length;
+}
+
+let resultado = calcularMedia([8, 7, 9, 10]);
+console.log("Média:", resultado); // Média: 8.5
+```
+
+---
+
+✍️ *Atualizado em: 23/09/2025*

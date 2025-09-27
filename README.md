@@ -1405,7 +1405,7 @@ console.log("Média:", resultado); // Média: 8.5
 ---
 ---
 
-## 📅 Dia 18 - React (Comandos Básicos)
+## 📅 Dia 18 - React (Comandos Básicos + State)
 
 1. **O que é React?**  
    - Biblioteca JavaScript para construção de interfaces de usuário.  
@@ -1528,18 +1528,45 @@ export default App;
 
 ---
 
+8. **State (useState)**
+
+* O **state** permite criar valores dinâmicos dentro de componentes.
+* Usado com o Hook `useState`.
+
+```jsx
+import { useState } from "react";
+
+function Contador() {
+  const [numero, setNumero] = useState(0);
+
+  return (
+    <div>
+      <h2>Contador: {numero}</h2>
+      <button onClick={() => setNumero(numero + 1)}>+</button>
+      <button onClick={() => setNumero(numero - 1)}>-</button>
+    </div>
+  );
+}
+
+export default Contador;
+```
+
+---
+
 ### **Exemplo Prático**
 
 ```jsx
-function Botao() {
-  return <button>Clique aqui</button>;
-}
+import { useState } from "react";
 
 function App() {
+  const [texto, setTexto] = useState("Olá, React!");
+
   return (
     <div>
-      <h1>Meu App React</h1>
-      <Botao />
+      <h1>{texto}</h1>
+      <button onClick={() => setTexto("Você clicou!")}>
+        Alterar Texto
+      </button>
     </div>
   );
 }
@@ -1548,5 +1575,4 @@ export default App;
 ```
 
 ---
-
 ✍️ *Atualizado em: 27/09/2025*

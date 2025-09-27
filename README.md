@@ -1403,5 +1403,150 @@ console.log("Média:", resultado); // Média: 8.5
 ```
 
 ---
+---
 
-✍️ *Atualizado em: 23/09/2025*
+## 📅 Dia 18 - React (Comandos Básicos)
+
+1. **O que é React?**  
+   - Biblioteca JavaScript para construção de interfaces de usuário.  
+   - Baseado em **componentes** reutilizáveis.  
+   - Usa **JSX**, que mistura HTML com JavaScript.
+
+---
+
+2. **Criando um Projeto React**  
+   - Com Vite (mais moderno e rápido):
+     ```bash
+     npm create vite@latest meu-projeto
+     cd meu-projeto
+     npm install
+     npm run dev
+     ```
+
+   - Com Create React App:
+     ```bash
+     npx create-react-app meu-projeto
+     cd meu-projeto
+     npm start
+     ```
+
+---
+
+3. **Estrutura de um Componente Básico**
+```jsx
+function App() {
+  return (
+    <div>
+      <h1>Olá, React!</h1>
+      <p>Meu primeiro componente</p>
+    </div>
+  );
+}
+
+export default App;
+````
+
+---
+
+4. **Usando JSX**
+
+* JSX permite escrever **HTML dentro do JavaScript**.
+
+```jsx
+const nome = "Ruan";
+const elemento = <h2>Bem-vindo, {nome}!</h2>;
+
+function App() {
+  return elemento;
+}
+```
+
+---
+
+5. **Componentes**
+
+* Podem ser funções que retornam JSX.
+* Devem começar com letra maiúscula.
+
+```jsx
+function Saudacao() {
+  return <h2>Olá, mundo!</h2>;
+}
+
+function App() {
+  return (
+    <div>
+      <Saudacao />
+    </div>
+  );
+}
+
+export default App;
+```
+
+---
+
+6. **Props (Propriedades)**
+
+* Permitem passar dados para componentes.
+
+```jsx
+function Saudacao(props) {
+  return <h2>Olá, {props.nome}!</h2>;
+}
+
+function App() {
+  return (
+    <div>
+      <Saudacao nome="Ruan" />
+      <Saudacao nome="Maria" />
+    </div>
+  );
+}
+
+export default App;
+```
+
+---
+
+7. **Fragmentos**
+
+* Evitam adicionar `div` desnecessárias.
+
+```jsx
+function App() {
+  return (
+    <>
+      <h1>Título</h1>
+      <p>Parágrafo</p>
+    </>
+  );
+}
+
+export default App;
+```
+
+---
+
+### **Exemplo Prático**
+
+```jsx
+function Botao() {
+  return <button>Clique aqui</button>;
+}
+
+function App() {
+  return (
+    <div>
+      <h1>Meu App React</h1>
+      <Botao />
+    </div>
+  );
+}
+
+export default App;
+```
+
+---
+
+✍️ *Atualizado em: 27/09/2025*

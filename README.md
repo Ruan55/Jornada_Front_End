@@ -1546,4 +1546,151 @@ function App() {
 
 export default App;
 ```
-✍️ *Atualizado em: 27/09/2025*
+---
+
+## 📅 Dia 19 - React (Componentes)
+
+1. **O que são Componentes?**  
+   - São **blocos reutilizáveis de código** que retornam JSX.  
+   - Permitem dividir a aplicação em partes menores e organizadas.  
+   - Tipos:
+     - **Componentes de Função** (os mais usados hoje em dia).
+     - **Componentes de Classe** (mais antigos, pouco usados em projetos novos).
+
+---
+
+2. **Componente de Função**
+```jsx
+function Saudacao() {
+  return <h2>Olá, React!</h2>;
+}
+
+export default Saudacao;
+````
+
+* Uso dentro de outro componente:
+
+```jsx
+import Saudacao from "./Saudacao";
+
+function App() {
+  return (
+    <div>
+      <Saudacao />
+    </div>
+  );
+}
+
+export default App;
+```
+
+---
+
+3. **Props em Componentes**
+
+* Permitem **passar dados** para componentes.
+
+```jsx
+function Saudacao(props) {
+  return <h2>Olá, {props.nome}!</h2>;
+}
+
+function App() {
+  return (
+    <div>
+      <Saudacao nome="Ruan" />
+      <Saudacao nome="Maria" />
+    </div>
+  );
+}
+```
+
+---
+
+4. **Destructuring de Props**
+
+* Maneira mais prática de usar props.
+
+```jsx
+function Perfil({ nome, idade }) {
+  return <p>{nome} tem {idade} anos.</p>;
+}
+
+function App() {
+  return (
+    <div>
+      <Perfil nome="Ruan" idade={23} />
+      <Perfil nome="Ana" idade={20} />
+    </div>
+  );
+}
+```
+
+---
+
+5. **Componentes Reutilizáveis**
+
+```jsx
+function Botao({ texto }) {
+  return <button>{texto}</button>;
+}
+
+function App() {
+  return (
+    <div>
+      <Botao texto="Salvar" />
+      <Botao texto="Cancelar" />
+    </div>
+  );
+}
+```
+
+---
+
+6. **Children (conteúdo dentro do componente)**
+
+* A prop `children` permite inserir elementos dentro de um componente.
+
+```jsx
+function Card({ children }) {
+  return <div className="card">{children}</div>;
+}
+
+function App() {
+  return (
+    <Card>
+      <h2>Título do Card</h2>
+      <p>Conteúdo do card</p>
+    </Card>
+  );
+}
+```
+
+---
+
+### **Exemplo Prático**
+
+```jsx
+function Usuario({ nome, email }) {
+  return (
+    <div>
+      <h3>{nome}</h3>
+      <p>{email}</p>
+    </div>
+  );
+}
+
+function App() {
+  return (
+    <div>
+      <h1>Lista de Usuários</h1>
+      <Usuario nome="Ruan Cruz" email="ruan@email.com" />
+      <Usuario nome="Maria Silva" email="maria@email.com" />
+    </div>
+  );
+}
+```
+
+---
+
+✍️ *Atualizado em: 29/09/2025*

@@ -53,10 +53,16 @@ function Verificar(){
 
             }
 
-            else{
+            else if(idade >= 60 && idade <= 100){
 
                 // Idoso
                 imagem.setAttribute('src', 'imagens/homem-idoso.jpg');
+
+            }
+
+            else{
+
+                imagem.setAttribute('src', 'imagens/esqueleto.webp');
 
             }
 
